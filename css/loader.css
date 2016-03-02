@@ -1,16 +1,21 @@
 #loader {
-    
+    /*Applies to the entire loader*/
 }
 #loader .loader-section {
-    
+    /*Both the sections of the loader*/
 }
 
 #loader .loader-section.top {
-    
+    /*Top section of loader*/
 }
 #loader .loader-section.bottom {
-    
+    /*Bottom section of loader*/
 }
+.spinner {
+    /*The fancy animation in the center*/
+}
+
+/*When the page is loaded*/
 .loaded #loader {
     
 }
@@ -21,8 +26,5 @@
     
 }
 .loaded .spinner {
-    
-}
-.spinner {
     
 }
