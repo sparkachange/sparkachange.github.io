@@ -1,6 +1,10 @@
 #loader {
     /*Applies to the entire loader*/
 }
+.no-js #loader {
+    /*When the browser is outdated*/
+    display: none;
+}
 #loader .loader-shutter {
     /*Both the shutters of the loader*/
     position: fixed;
@@ -45,3 +49,4 @@
 .loaded .spinner {
     
 }
+
