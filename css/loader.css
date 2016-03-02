@@ -1,15 +1,22 @@
 #loader {
     /*Applies to the entire loader*/
 }
-#loader .loader-section {
-    /*Both the sections of the loader*/
+#loader .loader-shutter {
+    /*Both the shutters of the loader*/
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 51%;
+    background: #1B1C1E;
+    z-index: 1000;
 }
 
-#loader .loader-section.top {
-    /*Top section of loader*/
+#loader .loader-shutter.top {
+    /*Top shutter of loader*/
 }
-#loader .loader-section.bottom {
-    /*Bottom section of loader*/
+#loader .loader-shutter.bottom {
+    /*Bottom shutter of loader*/
 }
 .spinner {
     /*The fancy animation in the center*/
@@ -19,10 +26,10 @@
 .loaded #loader {
     
 }
-.loaded #loader .loader-section.top {
+.loaded #loader .loader-shutter.top {
     
 }
-.loaded #loader .loader-section.bottom {
+.loaded #loader .loader-shutter.bottom {
     
 }
 .loaded .spinner {
