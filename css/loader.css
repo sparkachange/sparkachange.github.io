@@ -26,13 +26,21 @@
 
 /*When the page is loaded*/
 .loaded #loader {
-    
+    visibility: hidden;
 }
 .loaded #loader .loader-shutter.top {
-    
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: all 0.7s 0.3s ease-out;
+    transition: all 0.7s 0.3s ease-out;
 }
 .loaded #loader .loader-shutter.bottom {
-    
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: all 0.7s 0.3s ease-out;
+    transition: all 0.7s 0.3s ease-out;
 }
 .loaded .spinner {
     
