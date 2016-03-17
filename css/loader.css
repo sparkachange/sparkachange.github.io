@@ -62,7 +62,7 @@
     transition: all 0.3s 0.3s ease-out;
 }
 .loaded .fire-body {
-    fill: #fff;
+    fill: #df6e28;
     -webkit-transition: fill 0.3 ease-out;
     transition: fill 0.3s ease-out;
 }
