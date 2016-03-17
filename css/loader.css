@@ -29,8 +29,6 @@
     z-index: 100001;
     /*display: block;*/
     position: fixed;
-    left: 50%;
-    top: 50%;
     opacity: 1;
 }
 #spinner1 {
