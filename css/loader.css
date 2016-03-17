@@ -26,6 +26,15 @@
 }
 .spinner {
     /*The fancy animation in the center*/
+    z-index: 100001;
+    /*display: block;*/
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+}
+#spinner1 {
+
 }
 
 /*When the page is loaded*/
@@ -47,6 +56,5 @@
     transition: all 0.7s 0.3s ease-out;
 }
 .loaded .spinner {
-    
-}
 
+}
