@@ -12,7 +12,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="spithareduced.svg">
+   sodipodi:docname="spithabanner.svg">
   <metadata
      id="metadata16">
     <rdf:RDF>
@@ -21,7 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -52,7 +52,7 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2" />
   <rect
-     style="fill:#19202f;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     style="fill:#192024;fill-opacity:1;fill-rule:nonzero;stroke:none"
      id="rect3763"
      width="1920"
      height="1200"
