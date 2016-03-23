@@ -45,14 +45,14 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="0.34705882"
-     inkscape:cx="871.18645"
+     inkscape:cx="-27.79661"
      inkscape:cy="682.68016"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2" />
   <rect
-     style="fill:#192024;fill-opacity:1;fill-rule:nonzero;stroke:none"
+     style="fill:#080b0c;fill-opacity:1;fill-rule:nonzero;stroke:none"
      id="rect3763"
      width="1920"
      height="1200"
@@ -60,7 +60,7 @@
      y="0" />
   <g
      id="g3765"
-     transform="matrix(4.6748922,0,0,4.6748922,797.05896,207.79992)">
+     transform="matrix(4.2615467,0,0,4.2615467,811.46591,242.47754)">
     <path
        id="path4"
        d="m 21.1,100.766 2.474,11.554 c 2.226,21.172 3.713,35.517 4.84,55.47 h 10.7 c 0.996,-18.555 2.55,-35.483 5.16,-55.34 l 1.885,-11.715 z"
