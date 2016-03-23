@@ -481,6 +481,7 @@
 		}
 
 			.image.fit img {
+				border: 1px solid #5D6067;
 				display: block;
 				width: 100%;
 			}
