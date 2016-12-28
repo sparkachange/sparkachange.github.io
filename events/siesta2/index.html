@@ -16,15 +16,14 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
-
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/izimodal/1.4.2/css/iziModal.min.css"</script>
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/izimodal/1.4.2/js/iziModal.min.js"</script>
     <noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-xlarge.css" />
 		</noscript>
-		<link rel="stylesheet" href="css/loader.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 
@@ -95,7 +94,7 @@
 								<h3>Payments</h3>
 								<p>As there is a cash shortage in india right now, we will accepting online payment,payment through paytm onsite and normal cash ofcourse. There will be no online transaction fees.</p><p> The Entry Fee per team is ₹2500 for early bird if paid before 5th of January, The Normal Entry Fee online after 5th and onsite is ₹3000.
                 There will be no-refund of any kind under any circumstances </p><ul class="actions">
-									<li><!-- Trigger to open Modal -->
+									<li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#payments">Learn More</button></li>
 								</ul>
 							</section>
 						</div>
@@ -104,7 +103,33 @@
       </div>
 
 		</section>
+		<!-- Modal -->
+	  <div class="modal fade" id="payments" role="dialog">
+	    <div class="modal-dialog">
 
+	      <!-- Modal content-->
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h4 class="modal-title">Payment Details</h4>
+	        </div>
+	        <div class="modal-body">
+						<p> Before Paying Online, Please Ensure that you have already registered as a team</p>
+						<p>For Online payments One must pay to bank account then below <h6>and while using the payment gateway they must comment thier team name and thier name</h6> then send the proof of payment transaction to <a href="mailto:info@wesparkachange.net" target="_blank">info@wesparkachange.net</a> or <a href="mailto:rahultarak12345@gmail.com" target="_blank">rahultarak12345@gmail.com</a></p>
+						<p>Payment Details are:
+						<br>Name of Bank : YES BANK
+						<br>Name of Account : Rahul T Balaji
+						<br>Branch of Bank : Koramangala
+						<br>Account Number : 019890100006572
+						<br> IFSC CODE : YESB0000198
+					</p>
+					</div>
+	        <div class="modal-footer">
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        </div>
+	      </div>
+			</div>
+		</div>
 		<!-- Footer -->
 		<footer id="footer">
 			<div class="container">
