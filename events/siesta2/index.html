@@ -16,7 +16,10 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
-		<noscript>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/izimodal/1.4.2/css/iziModal.min.css"</script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/izimodal/1.4.2/js/iziModal.min.js"</script>
+    <noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-xlarge.css" />
@@ -55,10 +58,9 @@
         <div class="row">
           <div class="6u">
             <section class="special">
-              <div class="wrap">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.6490557986144!2d77.6774383148216!3d12.93026299088307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13a10b30d51b%3A0x811c14e40074bbea!2sKicks+on+Grass!5e0!3m2!1sen!2s!4v1482913097088" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-              <h3>Venue</h3>
-              <p>This tournament will be held in kicks on grass in bellandur,sarjapur.</p>
+              <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.6490557986144!2d77.6774383148216!3d12.93026299088307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13a10b30d51b%3A0x811c14e40074bbea!2sKicks+on+Grass!5e0!3m2!1sen!2s!4v1482914728228' width='600' height='450' frameborder='0' style='border:0' allowfullscreen></iframe></div>
+                  <h3><br><br>Venue and Timings</h3>
+              <p>This tournament will be held in KICKS ON GRASS On The 14th of JAN 2017, Starting at 10am Sharp</p><p>If not on time for any match the other team will get a walkover.</p>
               <ul class="actions">
                 <li><a target="_blank" href="https://www.facebook.com/Kicks-on-Grass-541350229275062/" class="button alt">Learn More</a></li>
               </ul>
@@ -84,7 +86,7 @@
 
 								<h3>Team details</h3>
 								<p>Each member of the team must be under the age of 18 and carry photo Id proof to the tournament.</p><p>Each team can have a max of 6 players on the field and 3 rolling subs.</p>	<ul class="actions">
-									<li><a href="#" class="button alt">Learn More</a></li>
+									<li><a href="#" class="button alt disabled">Learn More</a></li>
 								</ul>
 							</section>
 						</div>
@@ -92,8 +94,13 @@
 							<section class="special">
 								<h3>Payments</h3>
 								<p>As there is a cash shortage in india right now, we will accepting online payment,payment through paytm onsite and normal cash ofcourse. There will be no online transaction fees.</p><p> The Entry Fee per team is ₹2500 for early bird if paid before 5th of January, The Normal Entry Fee online after 5th and onsite is ₹3000.
-                </p>		<ul class="actions">
-									<li><a href="#" class="button alt">Learn More</a></li>
+                There will be no-refund of any kind under any circumstances </p><ul class="actions">
+									<li><!-- Trigger to open Modal -->
+<a href="events/siesta2/" class="trigger-payments">Modal</a>
+<!-- Modal structure -->
+<div id="modal-payments">
+    <!-- Page content -->
+</div></li>
 								</ul>
 							</section>
 						</div>
@@ -102,7 +109,10 @@
       </div>
 
 		</section>
+<script>
+$("#modal").iziModal();
 
+</script>
 		<!-- Footer -->
 		<footer id="footer">
 			<div class="container">
@@ -116,7 +126,7 @@
 									<li>Bharath Kayyar - Director</li>
 									<li>M Vedant Namboodiri - President</li>
 									<li>Rahul Tarak - CEO</li>
-									<li>R Chethan - VP</li>
+									<li>Aman Singla - VP</li>
 								</ul>
 							</div>
 							<div class="6u">
