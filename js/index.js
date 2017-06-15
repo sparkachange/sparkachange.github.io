@@ -36,6 +36,8 @@ $.ajax({
 		  }
 			 document.getElementById("nameUpcomingEvent").textContent = data.nameUpcoming;
 		  document.getElementById("descripUpcomingEvent").innerHTML = data.descripUpcoming; 
+		  } else {
+			  document.getElementById("linkUpcomingEvent").style.display = 'none';
 		  }
 	  }else{
 		 document.getElementById("imageCurrentEvent").style.display = 'none';
