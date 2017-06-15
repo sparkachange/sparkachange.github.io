@@ -16,6 +16,11 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+		 <script src="galleria/galleria-1.5.7.min.js"></script>
+		<style>#galleria{height:320px;}
+		#galleriaDream{height:320px;}</style>
+        <!-- load flickr plugin -->
+        <script src="galleria/plugins/flickr/galleria.flickr.min.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -25,10 +30,10 @@
 	</head>
 
 	<body>
-
+		</script>
 		<!-- Header -->
 		<header id="header" class="skel-layers-fixed">
-			<h1><a href="#">Spark A Change</a></h1>
+			<h1><a href="index.html">Spark A Change</a></h1>
 			<nav id="nav">
 				<ul>
 					<li><a href="/index.html">Home</a></li>
@@ -43,7 +48,8 @@
 					<h2>Spark A Change</h2>
 					<p>A charitable organization powered by students.</p>
 					<ul class="actions">
-						<li><a href="#one" class="button big alt">Learn More</a></li>
+						<li><a class="typeform-share button" href="https://sparkachange.typeform.com/to/yLoRzN" data-mode="drawer_left" style="display:inline-block;text-decoration:none;background-color:#dd7e26;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank">Volunteer Now! </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script></li>
+						
 					</ul>
 				</div>
 			</section>
@@ -82,67 +88,108 @@
 			</section>
 
 		<!-- Two -->
-			<section id="two" class="wrapper style2">
-				<header class="major">
+		<section id="two" class="wrapper style1">
+				<div class="container">
+					<header class="major">
 					<h2>Our Projects</h2>
-					<p>Projects that are in the works.</p>
+					<p id="currentProj"></p>
+					</header>
+					<div id="currentContainer">
+					<div class="row">
+						<div class="8u">
+							<section>
+								<a href="" class="image fit"><img id="imageCurrentEvent"/> </a><br>
+								<h3 id="nameCurrentEvent"></h3>
+								<p id="descripCurrentEvent"></p>
+								<ul class="actions">
+									<li><a href="" id="linkCurrentEvent" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="4u">
+							<section>
+								<h3 id="nameUpcomingEvent"></h3>
+								<p id="descripUpcomingEvent"></p>
+								<ul class="actions">
+									<li><a href="" id="linkUpcomingEvent" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+							
+						</div>
+					</div>
+				</div>
+				</div>	
+			</section>
+		
+			<section id="three" class="wrapper style2">
+				<header class="major">
+					<h4>Our Main Events</h4>
 				</header>
 				<div class="container">
 					<div class="row">
 						<div class="6u">
 							<section class="special">
-								<a href="events/siesta2" class="image fit"><img src="images/siesta2.png" alt="" /></a>
-								<h3>Siesta II</h3>
-								<p>The sequel to our football tournament Siesta, Siesta II promises to be a spectacular event. This football tournament fundraiser is the perfect place to show off your football skills, no matter what your skill level.</p>
+								<a href="events/siesta" class="image fit"><img src="images/siesta2.png" alt="" /></a>
+								<h3>Siesta Series</h3>
+								<p>Siesta is an annual footbal tournament fundraiser where it is the perfect place to show off your football skills, no matter what your skill level.</p>
+								<p>We have conducted two sistas till date with resounding sucess and are in the process of conceving the third Siesta</p>
 								<ul class="actions">
-									<li><a href="events/siesta2" class="button alt">Learn More</a></li>
+									<li><a href="events/siesta" class="button alt">Learn More</a></li>
 								</ul>
 							</section>
 						</div>
 						<div class="6u">
 							<section class="special">
-								<a href="" class="image fit" height="8px"><img src="images/dream1.jpg" alt="" /></a>
+								<a href="" class="image fit" ><img src="https://s3-eu-west-1.amazonaws.com/s3-sparkachange-server/Dream-3-web-min.jpg" alt="" /></a>
 								<h3>Project: Dream</h3>
-								<p>We are planning to conduct our extermely sucessfull colection drive once again this year, but this time we will not be limited to only toys.</p>
+								<p>Project Dream is a collection drive where we collect toys and books to help make a underprivillaged childs dreams come true. Project Dream is an also annual collection drive.</p>
+								<p>The third run of Project Dream will be starting very shortly</p>
 								<ul class="actions">
-									<li><a class="button disabled">Coming Soon</a></li>
+									<li><a href="events/projectDream/" class="button alt">Learn More</a></li>
 								</ul>
 							</section>
 						</div>
 					</div>
 				</div>
 			</section>
-
-		<!-- Three -->
-			<section id="three" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="8u">
-							<section>
-								<h2>Our Previous Projects</h2>
-								<a href="#" class="image fit"><img src="images/10903823_978680415493853_568482165681449942_o.jpg" alt="" /></a><br>
+					<section id="four" class="wrapper style1">
+						<div class="container">
+					<header class="major">
+					<h2>Help Chennai Today</h2>
+					<p>Our relief effort partnered with adults in our community</p>
+				</header>
+							<div class="row">
+						<div class="6u">
+						<a href="https://helpchennaitoday.wordpress.com/" class="image fit"><img src="images/12241766_1091149520916722_6961438859888873573_n.png" alt="" /></a> </div>
+								<div class="6u"><div id="galleriaDream"></div></div>
+							
+								</div>
+						<p>The end of 2015 brought a terrible storm to the shores of Chennai and surrounding areas in the state of Tamil Nadu. Spark A Change, in collaboration with concerned citizens of the city of Bangalore, raised funds and collected inventory of care packages. Using the funds raised, we purchased additional care packages containing essentials for those effected by the catastrophic flooding. Trucks filled with these packages were sent with volunteers who hand delivered them to the affected individuals.</p>
+							
+					</section>
+		 <section id="five" class="wrapper style1">
+						<div class="container">
+							<div class="row">
+								<div class="8u">
+									<section>
+							
+									<a href="https://www.facebook.com/media/set/?set=a.981113011917260.1073741832.951094288252466&type=1&l=56fe817198" class="image fit"><img src="images/10903823_978680415493853_568482165681449942_o.jpg" alt="" /></a><br>
 								<h3>Spítha I</h3>
 								<p>Our maiden event, a fundraising talent show where people of all skill levels came together to show off their talents! The show was the perfect platform for children of all ages to present their art in front of a vivacious audience. The money we raised was donated to the Samarthanam trust, a school for the blind. Spitha was a culmination of talent, showmanship and the joy of giving and its success confirmed our teams commitment towards helping make the world a better place.</p>
 							</section>
 						</div>
-						<div class="4u">
-							<section>
-								<h3>Siesta!</h3>
-								<p>A fundraising football tournament held at Kicks On Grass, Bellandur.</p>
-								<ul class="actions">
-									<li><a href="#" class="button alt">Learn More</a></li>
-								</ul>
-							</section>
-							<hr />
-							<section>
-								<h3 style="text-align:center">Special Thanks To All Our WellWishers</h3>
+							<div class="4u">
+							<div id="galleria"></div>
+								<section>
+								<h3 style="text-align:center">Our Past Partners</h3>
 								<ul class="alt" style="text-align:center">
 									<li>Brigade Hospitality</li>
 									<li>AECS Group of Institutions</li>
 									<li>Genesis</li>
+									<li>Samarthanam Trust</li>
+									<li>Sharaddha Eye Care Trust</li>
 								</ul>
 							</section>
-						</div>
 					</div>
 				</div>
 			</section>
@@ -156,20 +203,18 @@
 								<div class="6u">
 									<h3>Our Executive Team</h3>
 									<ul class="alt">
-										<li>Susmith Sk - Founder, COO</li>
-										<li>Bharath Kayyar - Director</li>
+										<li>Susmith Sk - Founder, Chairman</li>
+										<li>Bharath Kayyar - Vice Chairman</li>
 										<li>M Vedant Namboodiri - President</li>
 										<li>Rahul Tarak - CEO</li>
-										<li>Aman Singla - VP</li>
 									</ul>
 								</div>
 								<div class="6u">
 									<ul class="alt">
-										<li>Arnav Bansal - Technical Head</a></li>
-										<li>Pranav VR - Marketing Head</a></li>
-										<li>Tom Jose - CFO</li>
-										<li>Rishub Podar - HRD</li>
-										<li>Sukanya Basu - Chief Designer</li>
+										<li>Aman Singla - Senior Executive Vice President</li>
+										<li>Pranav VR - Executive Director</li>
+										<li>Arnav Bansal - Chief Techincal Officer</li>
+										<li>Tom Jose - Chief Finicial Officer</li>
 									</ul>
 								</div>
 							</div>
@@ -186,12 +231,42 @@
 							</ul>
 						</div>
 					<ul class="copyright">
-						<li>&copy; Spark a Change. All rights reserved.</li>
+						<li>&copy; Spark A Change. All rights reserved.</li>
 						<li>Design: <a href="https://github.com/CryogenicPlanet">CryogenicPlanet</a></li>
-						<li> Images :<a href ="http://wallpaperswide.com/"> WallpaperWide</a> </li>
+						</li>
 					</ul>
 				</div>
 			</footer>
-	</body>
+				<script src="js/index.js"></script>
+				    <script>
+    $(function() {
+        // Load the classic theme
+        Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
 
+        // Initialize Galleria
+        Galleria.run('#galleria', {
+
+            // search flickr for "galleria"
+            flickr: 'set:72157682151754903',
+
+            flickrOptions: {
+                // sort by interestingness
+                sort: 'interestingness-desc',
+				max : 400
+            }
+        });
+		 Galleria.run('#galleriaDream', {
+
+            // search flickr for "galleria"
+            flickr: 'set:72157682068344322',
+
+            flickrOptions: {
+                // sort by interestingness
+                sort: 'interestingness-desc',
+				max : 400
+            }
+        });
+    });
+    </script>
+	</body>
 </html>
