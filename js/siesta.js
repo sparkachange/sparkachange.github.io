@@ -45,12 +45,14 @@ function getAll(name){
 		  if(data.Venue != ""){
 			  document.getElementById("venue").textContent = "Venue";
 			  document.getElementById("venueDescip").innerHTML = data.Venue;
-			  document.getElementById("mapsLink").src = data.mapsLink;
+			  console.log(data.mapsLink);
+			  document.getElementById("mapsLink").href = data.mapsLink;
 		  }
 		   if(data.Registraion != ""){
 			  document.getElementById("registration").textContent = "Registraions";
 			  document.getElementById("registrationDescrip").innerHTML = data.Registration;
-			  document.getElementById("registrationLink").src = data.registrationLink;
+			   console.log(data.registrationLink);
+			  document.getElementById("registrationLink").href = data.registrationLink;
 		  }
 		  if(data.extraDetails1 != "" || data.extraDetails2 != ""){
 			   document.getElementById("details").textContent = "Additional Details";
