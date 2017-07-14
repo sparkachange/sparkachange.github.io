@@ -5,8 +5,8 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
 <html>
-
 	<head>
+		
 		<title>Spark a Change</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="Spark A Change: A charitable organization powered by students." />
@@ -16,6 +16,13 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+		<script src="/pace/pace.js"></script>
+  		<link href="/pace/themes/pace-theme-barber-shop.css" rel="stylesheet" />
+		 <script src="galleria/galleria-1.5.7.min.js"></script>
+		<style>#galleria{height:320px;}
+		#galleriaDream{height:320px;}</style>
+        <!-- load flickr plugin -->
+        <script src="galleria/plugins/flickr/galleria.flickr.min.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -24,22 +31,18 @@
 		<link rel="stylesheet" href="css/loader.css" />
 	</head>
 
-	<body id="top" onload="$('body').toggleClass('loaded');">
-
+	<body>
+		</script>
 		<!-- Header -->
-			<header id="header" class="skel-layers-fixed">
-				<h1><a href="#">Spark A Change</a></h1>
-				<nav id="nav">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="../events">Events</a></li>
-						<li><a href="upcoming-events.html">Upcoming Events</a></li>
-						<li><a class="typeform-share special" href="https://sparkachange.typeform.com/to/soffGf" data-mode="2" target="_blank">Participate in Spítha II</a>
-<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
-</li>
-					</ul>
-				</nav>
-			</header>
+		<header id="header" class="skel-layers-fixed">
+			<h1><a href="index.html">Spark A Change</a></h1>
+			<nav id="nav">
+				<ul>
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/events">Events</a></li>
+				</ul>
+			</nav>
+		</header>
 
 		<!-- Banner -->
 			<section id="banner">
@@ -47,7 +50,8 @@
 					<h2>Spark A Change</h2>
 					<p>A charitable organization powered by students.</p>
 					<ul class="actions">
-						<li><a href="#one" class="button big alt">Learn More</a></li>
+						<li><a class="typeform-share button" href="https://sparkachange.typeform.com/to/yLoRzN" data-mode="drawer_left" style="display:inline-block;text-decoration:none;background-color:#dd7e26;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank">Volunteer Now! </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script></li>
+						
 					</ul>
 				</div>
 			</section>
@@ -86,128 +90,209 @@
 			</section>
 
 		<!-- Two -->
-			<section id="two" class="wrapper style2">
-				<header class="major">
+		<section id="two" class="wrapper style1">
+				<div class="container">
+					<header class="major">
 					<h2>Our Projects</h2>
-					<p>Projects that are in the works.</p>
+					<p id="currentProj"></p>
+					</header>
+					<div id="currentContainer">
+					<div class="row">
+						<div class="8u">
+							<section>
+								<a href="" class="image fit"><img id="imageCurrentEvent"/> </a><br>
+								<h3 id="nameCurrentEvent"></h3>
+								<p id="descripCurrentEvent"></p>
+								<ul class="actions">
+									<li><a href="" id="linkCurrentEvent" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+						</div>
+						<div class="4u">
+							<section>
+								<h3 id="nameUpcomingEvent"></h3>
+								<p id="descripUpcomingEvent"></p>
+								<ul class="actions">
+									<li><a href="" id="linkUpcomingEvent" class="button alt">Learn More</a></li>
+								</ul>
+							</section>
+							
+						</div>
+					</div>
+				</div>
+				</div>	
+			</section>
+		
+			<section id="three" class="wrapper style2">
+				<header class="major">
+					<h4>Our Main Events</h4>
 				</header>
 				<div class="container">
 					<div class="row">
 						<div class="6u">
 							<section class="special">
-								<a href="events/spithaII" class="image fit"><img src="images/spithabanner.svg" alt="" /></a>
-								<h3>Spítha II</h3>
-								<p>The sequel to our maiden event Spítha, Spítha II promises to be a spectacular event. This talent show fundraiser is the perfect place to show off your talent, no matter what your skill level. More details about the event will be available soon!</p>
+								<a href="events/siesta" class="image fit"><img src="images/siesta2-min.png" alt="" /></a>
+								<h3>Siesta Series</h3>
+								<p>Siesta is an annual football tournament fundraiser which is the perfect place to show off your football skills, no matter what your skill level.</p>
+								<p>We have conducted two siestas till date with resounding success and are in the process of conceiving the third Siesta and are looking forward to seeing you there</p>
 								<ul class="actions">
-									<li><a href="events/spithaII" class="button alt">Learn More</a></li>
+									<li><a href="events/siesta" class="button alt">Learn More</a></li>
 								</ul>
 							</section>
 						</div>
 						<div class="6u">
 							<section class="special">
-								<a href="#" class="image fit"><img src="images/video-games-893225_1920.jpg" alt="" /></a>
-								<h3>Aussenseiter: The Gameathon</h3>
-								<p> Gamers unite! Bring your bloodthirsty, sports crazy, maddening skills over to compete for the ultimate glory! More details about this tech-savy event will be released shortly!</p>
+								<a href="events/projectDream/" class="image fit" ><img src="https://s3-eu-west-1.amazonaws.com/s3-sparkachange-server/Dream-3-web-min.jpg" alt="" /></a>
+								<h3>Project: Dream</h3>
+								<p>Project Dream is a collection drive during which we collect toys and books to help make a underprivillaged childs dreams come true. Project Dream are regular collection drives ranging from notebooks, storybooks, toys, old sports equipment These drives are conducted regularly in various apartments and institutions</p>
+								<p>The third run of Project Dream will be starting very shortly</p>
 								<ul class="actions">
-									<li><a class="button alt">Coming Soon</a></li>
+									<li><a href="events/projectDream/" class="button alt">Learn More</a></li>
 								</ul>
 							</section>
 						</div>
 					</div>
 				</div>
 			</section>
-
-		<!-- Three -->
-			<section id="three" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="8u">
-							<section>
-								<h2>Our Previous Projects</h2>
-								<a href="#" class="image fit"><img src="images/10903823_978680415493853_568482165681449942_o.jpg" alt="" /></a><br>
+					<section id="four" class="wrapper style1">
+						<div class="container">
+					<header class="major">
+					<h2>Help Chennai Today</h2>
+					<p>Our relief effort partnered with adults in our community</p>
+				</header>
+							<div class="row">
+						<div class="6u">
+						<a href="https://helpchennaitoday.wordpress.com/" class="image fit"><img src="images/12241766_1091149520916722_6961438859888873573_n.png" alt="" /></a> </div>
+								<div class="6u"><div id="galleriaDream"></div></div>
+							
+								</div>
+						<p>The end of 2015 brought a terrible storm to the shores of Chennai and surrounding areas in the state of Tamil Nadu. Spark A Change, in collaboration with concerned citizens of the city of Bangalore, raised funds and collected inventory of care packages. Using the funds raised, we purchased additional care packages containing essentials for those effected by the catastrophic flooding. Trucks filled with these packages were sent with volunteers who hand delivered them to the affected individuals.</p>
+							
+					</section>
+		 <section id="five" class="wrapper style1">
+						<div class="container">
+							<div class="row">
+								<div class="8u">
+									<section>
+							
+									<a href="https://www.facebook.com/media/set/?set=a.981113011917260.1073741832.951094288252466&type=1&l=56fe817198" class="image fit"><img src="images/10903823_978680415493853_568482165681449942_o.jpg" alt="" /></a><br>
 								<h3>Spítha I</h3>
 								<p>Our maiden event, a fundraising talent show where people of all skill levels came together to show off their talents! The show was the perfect platform for children of all ages to present their art in front of a vivacious audience. The money we raised was donated to the Samarthanam trust, a school for the blind. Spitha was a culmination of talent, showmanship and the joy of giving and its success confirmed our teams commitment towards helping make the world a better place.</p>
 							</section>
 						</div>
-						<div class="4u">
-							<section>
-								<h3>Siesta!</h3>
-								<p>A fundraising football tournament held at Kicks On Grass, Bellandur.</p>
-								<ul class="actions">
-									<li><a href="#" class="button alt">Learn More</a></li>
-								</ul>
-							</section>
-							<hr />
-							<section>
-								<h3 style="text-align:center">Special Thanks To All Our WellWishers</h3>
+							<div class="4u">
+							<div id="galleria"></div>
+								<section>
+								<h3 style="text-align:center">Our Previous Partners</h3>
 								<ul class="alt" style="text-align:center">
 									<li>Brigade Hospitality</li>
 									<li>AECS Group of Institutions</li>
 									<li>Genesis</li>
+									<li>Samarthanam Trust</li>
+									<li>Sharaddha Eye Care Trust</li>
 								</ul>
 							</section>
-						</div>
 					</div>
 				</div>
 			</section>
 
 			<!-- Footer -->
-			<footer id="footer">
+				<footer id="footer">
 				<div class="container">
 					<div class="row double">
-						<div class="6u">
+						<div class="8u">
 							<div class="row collapse-at-2">
-								<div class="6u">
+								<div class="5u">
 									<h3>Our Executive Team</h3>
 									<ul class="alt">
+<<<<<<< HEAD
 										<li>Susmith Sk - Co Founder/Chief Procrastinator</li>
 										<li>Bharath Kayyar - Co Founder</li>
 										<li>M Vedant Namboodiri - Co Founder</li>
 										<li>Rahul Tarak - Corporate title expert/Cheif of bad speling</li>
 										<li>R Chethan - MC (Missing)</li>
+=======
+										<li>Susmith Sk - Founder, Chairman</li>
+										<li>Bharath Kayyar - Vice Chairman</li>
+										<li>M Vedant Namboodiri - President</li>
+										<li>Rahul Tarak - Chief Executive Officer</li>
+										<li>Aman Singla - Executive Director</li>
+										<li>Pranav VR - Managing Director</li>
+>>>>>>> upstream/master
 									</ul>
 								</div>
-								<div class="6u">
+								<div class="4u">
 									<ul class="alt">
+<<<<<<< HEAD
 										<li>Arnav Bansal - Head of Geekery and useless innovation</a></li>
 										<li>Pranav VR - Head of 'What are we even doing right now?</a></li>
 										<li>Tom Jose - CFO (in an alternate universe)</li>
 										<li>Rishub Podar - Anything but HRD</li>
 										<li>Sukanya Basu - Chief Designer (once upon a time)</li>
+=======
+										<li>Arnav Bansal - Chief Techincal Officer</li>
+										<li>Tom Jose - Chief Marketing Officer</li>
+										<li>Rohit Rao - Chief Finacial Officer</li>
+										<li>Vijay Sivakumar - Chief Administrative Officer</li>
+									</ul>
+								</div>
+								<div class="3u">
+									<ul class="alt">
+										<li>Arjun Murthy - Deputy Chief Marketing Officer</li>
+										<li>Vedant Bhagat - Deputy Chief Finacial Officer</li>
+>>>>>>> upstream/master
 									</ul>
 								</div>
 							</div>
 						</div>
-						<div class="6u">
+						<div class="4u">
 							<h2>Contact us</h2>
-							<p>Feel Free to Contact us at any of link below or email us at<br> <a href="mailto:info@wesparkachange.net" target="_blank">info@wesparkachange.net</a></p>
+							<p>Feel Free to Contact us at any of link below or email us at<br> <a href="mailto:wesparkthechange@gmail.com" target="_blank">wesparkthechange@gmail.com</a></p>
 							<ul class="icons">
 								<li><a href="https://twitter.com/WeSparkAChange" class="icon fa-twitter"target="-_blank"><span class="label">Twitter</span></a></li>
 								<li><a href="https://www.facebook.com/Spark-a-Change-951094288252466/" class="icon fa-facebook"target="-_blank"><span class="label">Facebook</span></a></li>
 								<li><a href="https://github.com/sparkachange" class="icon fa-github"target="-_blank"><span class="label">Github</span></a></li>
-								<li><a href="mailto:info@wesparkachange.net" class="icon fa-inbox"target="-_blank"><span class="label">Inbox</span></a></li>
+								<li><a href="mailto:wesparkthechange@gmail.com" class="icon fa-inbox"target="-_blank"><span class="label">Inbox</span></a></li>
 
 							</ul>
 						</div>
 					<ul class="copyright">
-						<li>&copy; Spark a Change. All rights reserved.</li>
+						<li>&copy; Spark A Change. All rights reserved.</li>
 						<li>Design: <a href="https://github.com/CryogenicPlanet">CryogenicPlanet</a></li>
+						</li>
 					</ul>
 				</div>
 			</footer>
-			<div id="loader">
-	            <div id="spinner1" class="spinner">
-		<!--			<svg xmlns="http://www.w3.org/2000/svg" width="70" height="170">
-					    <path class="torch-holder" d="M21.1 100.766l2.474 11.554c2.226 21.172 3.713 35.517 4.84 55.47h10.7c.996-18.555 2.55-35.483 5.16-55.34l1.885-11.715z" fill="#0f5546"/>
-					    <path class="torch-guard" d="M18.268 93.69c-4.645 2.682-4.288 9.12 3.184 9.12s16.488-.022 24.29-.022c7.375 0 7.133-7.166 3.314-9.37-7.273.066-24.953.272-30.788.272z" fill="#1a9076"/>
-					    <path class="fire-body" d="M34.147 0s-.696 23.636-20.894 42.526c-.307-12.548-3.38-15.337-3.38-15.337C.923 50.335-11.275 71.633 21.2 96.206c12.924 0 12.923.008 24.09.008 4.752-1.917 44.018-34.256 11.902-79.483.585 10.208-4.61 18.995-4.61 18.995S44.286 17.777 34.146 0z" fill="#1a90aa"/>
-					    <path class="fire-core" d="M34.38 31.726s-.466 15.837-14 28.495c-.206-8.407-2.265-10.276-2.265-10.276-5.997 15.51-14.17 29.78 7.59 46.246 8.66 0 8.66.005 16.142.005 3.184-1.285 29.494-22.953 7.975-53.258.392 6.84-3.09 12.727-3.09 12.727S41.175 43.638 34.38 31.726z" opacity=".37" fill="#fff"/>
-					</svg> -->
-				</div>
-	            <div id="spinner2" class="spinner"></div>
-	            <div class="loader-shutter top"></div>
-	            <div class="loader-shutter bottom"></div>
-	        </div>
-	</body>
+				<script src="js/index.js"></script>
+				    <script>
+    $(function() {
+        // Load the classic theme
+        Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
 
+        // Initialize Galleria
+        Galleria.run('#galleria', {
+
+            // search flickr for "galleria"
+            flickr: 'set:72157682151754903',
+
+            flickrOptions: {
+                // sort by interestingness
+                sort: 'interestingness-desc',
+				max : 400
+            }
+        });
+		 Galleria.run('#galleriaDream', {
+
+            // search flickr for "galleria"
+            flickr: 'set:72157682068344322',
+
+            flickrOptions: {
+                // sort by interestingness
+                sort: 'interestingness-desc',
+				max : 400
+            }
+        });
+    });
+    </script>
+	</body>
 </html>
