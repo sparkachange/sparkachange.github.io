@@ -1,3 +1,4 @@
+/* global $ Galleria*/
 var container = document.getElementById("currentContainer");
 container.style.display = 'none';
 console.log("js start");
@@ -50,4 +51,31 @@ $.ajax({
 	  }
   }
 });
-	
+$(function() {
+    // Load the classic theme
+    Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+
+    // Initialize Galleria
+    Galleria.run('#galleria', {
+
+        // search flickr for "galleria"
+        flickr: 'set:72157682151754903',
+
+        flickrOptions: {
+            // sort by interestingness
+            sort: 'interestingness-desc',
+			max : 400
+        }
+    });
+	 Galleria.run('#galleriaDream', {
+
+        // search flickr for "galleria"
+        flickr: 'set:72157682068344322',
+
+        flickrOptions: {
+            // sort by interestingness
+            sort: 'interestingness-desc',
+			max : 400
+        }
+    });
+});
